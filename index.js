@@ -4,7 +4,7 @@ const PORT = process.env.PORT;
 const app = express();
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
-app.listen(3000, () => console.log('Webhook server is listening, port 3000'));
+app.listen(PORT, () => console.log('Webhook server is listening, port port'));
 const verificationController=require('./Controllers/verification');
 const messageWebhookController = require('./Helpers/messageWebhook');
 app.get('/', verificationController);
